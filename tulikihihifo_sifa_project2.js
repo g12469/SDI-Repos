@@ -1,7 +1,7 @@
 // Sifa Tulikihihifo
 // SDI 1307
 // Project 2
-// Hopefully I get a good grade for this project!
+// I am glad this Project is over! Ready to tackle week 3!!!
 
 
 // My Variables
@@ -14,10 +14,10 @@ var soundBabiesMake = '"Wah... Wah... WAAAAAAAAH!"',
 	isJaylaBored = true,
 	doWeHaveBabyFood = false,
 	doesLiaLikeMilk = true,
-	thingsJaylaLikesToDo = ["play outside", "play with her toys", "watch TV"],
 	daughtersName = ["Lia", "Jayla"],
 	whatToFeedBaby = ["baby food", "milk", "cookies", "vegies"],
 	howMuchMoneyIHave = "$" + 45,
+	pricePerApp = 5,
 	say = function(message) { console.log(message); };
 ;
 
@@ -32,10 +32,6 @@ if (isLiaHungry == true && isJaylaBored == true) {
 	say("I guess I can go back to sleep.");
 };
 
-
-say("I get up and try to find something to feed Lia.");
-say("I see that we have " + whatToFeedBaby[1] + ". So, I pour Lia a bottle of " + whatToFeedBaby[1] + ", lay her down in my arms, and give her the 8 oz. bottle.");
-
 // Boolean Function
 var booleanFunction = function(doesLiaLikeMilk = true) {
 	if (doesLiaLikeMilk == true) {
@@ -48,17 +44,14 @@ var booleanFunction = function(doesLiaLikeMilk = true) {
 };
 
 // Number Function
-var pricePerApp = 5; //unrealistic I know, but it's better than logging $0.99 apps.
 var numberFunction = function (moneyIHave = 45) {
 	while (moneyIHave > pricePerApp) {
 		var moneyLeftOver = moneyIHave - pricePerApp;
 		if (moneyLeftOver > pricePerApp) {
 			say("After purchasing the app, I have $" + moneyLeftOver + " left to spend.");
-			say("I find another app for Jayla. It costs another $5.")
-			say(" ");
+			say("I find another app for Jayla. It costs another $5.");
 		} else{
 			say("Now I only have $5! I better save my money for something more important.");
-			say(" ");
 				}
 	moneyIHave -= pricePerApp
 	};
@@ -80,16 +73,17 @@ var stringFunction = function (whatChannelToWatch) {
 };
 
 // Array Function
-var arrayFunction = function(myDaughtersFavoriteShows) {
-	var myDaughtersFavoriteShows = ["Bubble Guppies" , "Mickey's Play House" , "Back Yardigans"],
+var arrayFunction = function() {
+	var myDaughtersFavoriteShows = ["Bubble Guppies", "Mickey's Play House", "Back Yardigans"],
 		minutesPerShow = [ 30, 30, 30];
 	for (var favoriteShowNumber = 0; favoriteShowNumber < myDaughtersFavoriteShows.length; favoriteShowNumber++) {
-		var myDaughtersFavoriteShows = myDaughtersFavoriteShows[favoriteShowNumber],
+		var myDaughtersFavoriteShow = myDaughtersFavoriteShows[favoriteShowNumber],
 			minutesThisShow = minutesPerShow[favoriteShowNumber];
-	say("We'll watch the " + myDaughtersFavoriteShows + " for " + minutesThisShow + " minutes.");
+			say("Watching these kiddy shows are killing me! ");
+			say("We'll watch the " + myDaughtersFavoriteShow + " for " + minutesThisShow + " minutes.");
 	for (var minutes = 0; minutes < minutesThisShow; minutes += 10) {
 		var minutesRemain = minutesThisShow - minutes;
-		say(minutes + " done, " + minutesRemain + " to go till this show is over!");
+		say("I look at that clock and notice that " + minutes + " done, " + minutesRemain + " to go till this show is over!");
 		}
 	}
 										
@@ -97,6 +91,8 @@ var arrayFunction = function(myDaughtersFavoriteShows) {
 };
 
 // Returned Values
+say("I get up and try to find something to feed Lia.");
+say("I see that we have " + whatToFeedBaby[1] + ". So, I pour Lia a bottle of " + whatToFeedBaby[1] + ", lay her down in my arms, and give her the 8 oz. bottle.");
 
 booleanFunction()
 
@@ -105,7 +101,7 @@ say("Looks like I forgot to play with " + daughtersName[1] + ".");
 say("Since " + daughtersName[1] + " loves to play games on the iPad, I'll download a few new apps for her.")
 say('I think to myself, "Do I even have any money in my bank account?"')
 say('Using my "Bank of America" app, I check my account and it says I have ' + howMuchMoneyIHave + " in my account.");
-say("I check the app store and find a few good apps I know Jayla will love.")
+say("I check the app store and find a few good apps I know Jayla will love. It looks like they all cost $5.")
 
 numberFunction()
 
@@ -117,4 +113,6 @@ say("After a few minutes of relaxation I hear ," + soundBabiesMake);
 
 arrayFunction()
 
-say("Looks like the day is going to end. I bath the girls, read them a bed time story, and tuck them to bed... knowing that tomorrow will be just like today.");
+say("Looks like the day is going to end. I bathe the girls, read them a bed time story, and tuck them to bed... knowing that tomorrow will be just like today.");
+say(" ");
+say("Now I can finally do homework!");
