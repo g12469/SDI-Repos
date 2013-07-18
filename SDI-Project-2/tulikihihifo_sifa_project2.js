@@ -25,7 +25,7 @@ say("They cry in unison." + soundBabiesMake);
 say('I think to myself, "I wonder if they are hungry."');
 say("I check to see if " + daughtersName[0] + " is hungry.");
 if (isLiaHungry == true && isJaylaBored == true) {
-	say("It's true that " + daughtersName[0] + " is hungry and " + daughtersName[1] + " is bored.");
+	say("It's true that " + daughtersName[0] + " is hungry, but it seems that " + daughtersName[1] + " is bored.");
 } else {
 	say("I guess I can go back to sleep.");
 };
