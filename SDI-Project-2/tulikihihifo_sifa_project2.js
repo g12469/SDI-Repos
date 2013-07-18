@@ -6,8 +6,6 @@
 
 // My Variables
 var soundBabiesMake = '"Wah... Wah... WAAAAAAAAH!"',
-	enoughMoney = "I can buy food for the babies.",
-	notEnoughMoney = "I can't buy any food.",
 	isLiaHungry = true,
 	isJaylaHungry = false,
 	isLiaBored = false,
