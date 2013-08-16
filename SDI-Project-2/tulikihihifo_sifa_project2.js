@@ -58,16 +58,13 @@ var numberFunction = function(moneyIHave = 45) {
 };
 
 // String Function
-var getGreetingByName = function(){
-	var currentHour = (new Date()).getHours(),
-		timeOfDay,
-		greeting;
-	if (currentHour < 12) { timeOfDay = "morning";}
-	else if (currentHour <17) { timeOfDay = "afternoon";}
-	else { timeOfDay = "evening";}
-	greeting = "Good " + timeOfDay + ", " + name + "!";
-	return greeting;
-	
+var stringFunction = function(myChannel, theirChannel) {
+	var myFavoriteShow = "ESPN",
+		myChannel = myFavoriteShow,
+		theirChannel = "Disney Channel";
+	if (myFavoriteShow == "ESPN") {
+		say("I'll watch " + myChannel + " for a little bit. Once " + daughtersName[0] + " and " + daughtersName[1] + " wake up, I'll have to change it to the " + theirChannel);
+	}
 };
 
 
