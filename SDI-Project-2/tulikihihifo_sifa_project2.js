@@ -42,7 +42,20 @@ var booleanFunction = function(doesLiaLikeMilk = true) {
 };
 
 // Number Function
-
+var numberFunction = function(moneyIHave = 45) {
+	while (moneyIHave > pricePerApp) {
+		var moneyLeftOver = moneyIHave - pricePerApp;
+		if (moneyLeftOver > pricePerApp) {
+			say("After purchasing the app, I have $" + moneyLeftOver + " left to spend.");
+			say("I find another app for Jayla. It costs another $5.");
+		} else{
+			say("Now I only have $5! I better save my money for something more important.");
+				}
+	moneyIHave -= pricePerApp
+	};
+	
+	return
+};
 
 // String Function
 var getGreetingByName = function(){
