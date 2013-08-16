@@ -84,13 +84,32 @@ var arrayFunction = function() {
 	return
 };
 
-
 // Returned Values
-var fullGreeting = getGreetingByName("Sifa");
+say("I get up and try to find something to feed Lia.");
+say("I see that we have " + whatToFeedBaby[1] + ". So, I pour Lia a bottle of " + whatToFeedBaby[1] + ", lay her down in my arms, and give her the 8 oz. bottle.");
 
+booleanFunction()
 
-// Output
-console.log(fullGreeting);
+say(soundBabiesMake);
+say("Looks like I forgot to play with " + daughtersName[1] + ".");
+say("Since " + daughtersName[1] + " loves to play games on the iPad, I'll download a few new apps for her.")
+say('I think to myself, "Do I even have any money in my bank account?"')
+say('Using my "Bank of America" app, I check my account and it says I have ' + howMuchMoneyIHave + " in my account.");
+say("I check the app store and find a few good apps I know Jayla will love. It looks like they all cost $5.")
 
+numberFunction()
 
+say("Now that Lia is fed and Jayla is entertained, I guess I can watch some TV.")
+
+stringFunction()
+
+say("After a few minutes of relaxation I hear ," + soundBabiesMake);
+say("It was fun having some personal time, but now I should find something for these kids to watch.");
+
+arrayFunction()
+
+say("After a few hours of watching TV shows, it looks like the day is going to end soon.")
+say("I bathe the girls, read them a bed time story, and tuck them to bed... knowing that tomorrow will be just like today.");
+say(" ");
+say("Now I can FINALLY do homework!");
 // Finish
