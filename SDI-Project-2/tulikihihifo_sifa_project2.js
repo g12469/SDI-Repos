@@ -20,34 +20,29 @@ var soundBabiesMake = '"Wah... Wah... WAAAAAAAAH!"',
 ;
 
 // Procedure
-
+say("I wake up in the morning to the sounds of babies crying.");
+say("They cry in unison." + soundBabiesMake);
+say('I think to myself, "I wonder if they are hungry."');
+say("I check to see if " + daughtersName[0] + " is hungry.");
+if (isLiaHungry == true && isJaylaBored == true) {
+	say("It's true that " + daughtersName[0] + " is hungry, but it seems that " + daughtersName[1] + " is bored.");
+} else {
+	say("I guess I can go back to sleep.");
+};
 
 // Boolean Function
-var getGreetingByName = function(){
-	var currentHour = (new Date()).getHours(),
-		timeOfDay,
-		greeting;
-	if (currentHour < 12) { timeOfDay = "morning";}
-	else if (currentHour <17) { timeOfDay = "afternoon";}
-	else { timeOfDay = "evening";}
-	greeting = "Good " + timeOfDay + ", " + name + "!";
-	return greeting;
+var booleanFunction = function(doesLiaLikeMilk = true) {
+	if (doesLiaLikeMilk == true) {
+	say(daughtersName[0] + " drinks all of her milk and falls right back to sleep.")
+	} else {
+	say(soundBabiesMake);
+	};
 	
+	return
 };
-
 
 // Number Function
-var getGreetingByName = function(){
-	var currentHour = (new Date()).getHours(),
-		timeOfDay,
-		greeting;
-	if (currentHour < 12) { timeOfDay = "morning";}
-	else if (currentHour <17) { timeOfDay = "afternoon";}
-	else { timeOfDay = "evening";}
-	greeting = "Good " + timeOfDay + ", " + name + "!";
-	return greeting;
-	
-};
+
 
 // String Function
 var getGreetingByName = function(){
