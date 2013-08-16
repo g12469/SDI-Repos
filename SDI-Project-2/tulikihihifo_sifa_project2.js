@@ -69,16 +69,19 @@ var stringFunction = function(myChannel, theirChannel) {
 
 
 // Array Function
-var getGreetingByName = function(){
-	var currentHour = (new Date()).getHours(),
-		timeOfDay,
-		greeting;
-	if (currentHour < 12) { timeOfDay = "morning";}
-	else if (currentHour <17) { timeOfDay = "afternoon";}
-	else { timeOfDay = "evening";}
-	greeting = "Good " + timeOfDay + ", " + name + "!";
-	return greeting;
-	
+var arrayFunction = function() {
+	var myDaughtersFavoriteShows = ["The Bubble Guppies", "Mickey's Play House", "The Back Yardigans"],
+		minutesPerShow = [ 30, 30, 30];
+	for (var favoriteShowNumber = 0; favoriteShowNumber < myDaughtersFavoriteShows.length; favoriteShowNumber++) {
+		var myDaughtersFavoriteShow = myDaughtersFavoriteShows[favoriteShowNumber],
+			minutesThisShow = minutesPerShow[favoriteShowNumber];
+			say("We'll now watch " + myDaughtersFavoriteShow + ". The show will only last " + minutesThisShow + " minutes.");
+	for (var minutes = 0; minutes < minutesThisShow; minutes += 10) {
+		var minutesRemain = minutesThisShow - minutes;
+		say("I look at that clock and notice that " + minutes + " minutes have passed, " + minutesRemain + " to go till this show is over!");
+		}
+	}						
+	return
 };
 
 
