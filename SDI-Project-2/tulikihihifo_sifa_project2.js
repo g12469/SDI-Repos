@@ -1,7 +1,7 @@
 // Sifa Tulikihihifo
 // SDI 1308
 // Project 2
-// Time to Workout!!!
+// Wow! This was a tough week!!!
 
 // Variables
 // My Variables
