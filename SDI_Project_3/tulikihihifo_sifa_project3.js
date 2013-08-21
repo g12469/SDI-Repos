@@ -38,3 +38,36 @@ trollInfo = {
 	gold: 25,
 	attackWithClaws: 14
 };
+
+// Variables to be used later on in the story...
+var trollAttack = (trollInfo.power + trollInfo.speed + trollInfo.attackWithClaws);
+var knightAttack = (knightInfo.power + knightInfo.speed + knightInfo.attackWithSword);
+var knightSpells = {
+	fire: 250,
+	ice: 200,
+	wisdom: (knightInfo.power + 500) //ability to find enemies weaknesses
+};
+var trollSpells = {
+	beserker: 275,
+	bloodThirsty: 300  
+};
+
+var trollTotalAttack = (trollSpells.beserker + trollSpells.bloodThirsty + trollAttack);
+var knightTotalAttack = (knightSpells.fire + knightSpells.ice + knightSpells.wisdom + knightAttack);	
+
+if (trollAttack > knightAttack){
+	say("The troll is more powerful.");
+		} else {
+	say("The knight is more powerful.");	
+};
+if (trollTotalAttack > knightTotalAttack){
+	say("The troll is still more powerful.")
+	} else {
+	say("The knight, with the power of magic, is now able to defeat the evil troll.");
+};
+
+say(trollSpells.beserker + trollSpells.bloodThirsty + trollAttack + " is the trolls total attack power.");
+say(knightSpells.fire + knightSpells.ice + knightSpells.wisdom + knightAttack + " is the knights total attack power.");
+
+
+//I need to figure out how to code a battle.
